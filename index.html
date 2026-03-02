@@ -381,6 +381,100 @@
       .nav-links { display: none; }
       .hero { padding: 60px 20px 80px; }
     }
+    
+    .tags-section { background: var(--navy); }
+    .tags-intro { max-width: 680px; margin-bottom: 56px; }
+    .tags-section .section-label { color: var(--silver); }
+    .tags-section .section-title { color: var(--white); }
+    .tags-section .section-sub { color: rgba(255,255,255,0.7); }
+    .tags-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .tags-explainer { display: flex; flex-direction: column; gap: 28px; }
+    .tag-step { display: flex; gap: 20px; align-items: flex-start; }
+    .tag-step-number {
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 800;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .tag-step-text h4 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .tag-step-text p { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+    .tag-mockup {
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .mockup-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .mockup-header span { font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: 0.5px; text-transform: uppercase; }
+    .mockup-header small { font-size: 12px; color: rgba(255,255,255,0.45); }
+    .tag-group { margin-bottom: 24px; }
+    .tag-group:last-child { margin-bottom: 0; }
+    .tag-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .tag-label.blue { background: rgba(100,181,246,0.2); color: #90caf9; }
+    .tag-label.green { background: rgba(102,187,106,0.2); color: #a5d6a7; }
+    .tag-label.orange { background: rgba(255,183,77,0.2); color: #ffcc80; }
+    .tag-label.purple { background: rgba(186,104,200,0.2); color: #ce93d8; }
+    .tag-items { display: flex; flex-direction: column; gap: 8px; }
+    .tag-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .tag-item-left { display: flex; align-items: center; gap: 10px; }
+    .tag-item-icon { font-size: 16px; }
+    .tag-item-title { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); }
+    .tag-item-date { font-size: 11px; color: rgba(255,255,255,0.4); }
+    .tag-count { background: rgba(255,255,255,0.15); color: var(--white); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+    .premium-badge-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 680px) {
+      .tags-layout { grid-template-columns: 1fr; gap: 32px; }
+    }
   </style>
 </head>
 <body>
@@ -401,7 +495,7 @@
 <section class="hero">
   <div class="hero-badge">🧠 AI-Powered Sports Coaching</div>
   <h1>Master <span>Your Position</span><br>With AI Coaching</h1>
-  <p>SportsIQ gives athletes a 24/7 AI sports coach in their pocket — position-specific workout plans and sports IQ coaching tailored to your exact position.</p>
+  <p>SportsIQ gives athletes a 24/7 AI sports coach in their pocket — position-specific workout plans and sports IQ coaching tailored to your exact position, and all powered by Claude AI.</p>
   <div class="hero-buttons">
     <a href="#download" class="btn-primary">📱 Download on App Store</a>
     <a href="#pricing" class="btn-secondary">View Plans</a>
@@ -425,7 +519,7 @@
   <div class="container">
     <div class="section-label">What We Offer</div>
     <h2 class="section-title">Your AI Coach Never<br>Sleeps, Never Judges</h2>
-    <p class="section-sub">Ask any sports IQ question or generate a personalized workout plan — all tailored to your specific position and experience level.</p>
+    <p class="section-sub">Ask any sports IQ question or generate a personalized workout plan — all tailored to your specific position and experience level, and all powered by Claude AI.</p>
     <div class="features-grid">
       <div class="feature-card">
         <span class="feature-icon">🤖</span>
@@ -502,14 +596,14 @@
   <div class="container">
     <div class="section-label">Simple Pricing</div>
     <h2 class="section-title">Start Free, Train Smarter</h2>
-    <p class="section-sub">Try SportsIQ free for 7 days. No commitment required. Cancel anytime.</p>
+    <p class="section-sub">Try SportsIQ for free. Cancel anytime.</p>
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-tier">Basic</div>
         <div class="pricing-price">$11.99<span>/mo</span></div>
-        <div class="pricing-desc">Perfect for single-sport athletes</div>
+        <div class="pricing-desc">Perfect for athletes that are in their early stages of development</div>
         <ul class="pricing-features">
-          <li>AI sports IQ coaching</li>
+          <li>AI sports IQ coaching, powered by Claude AI</li>
           <li>Position-specific workouts</li>
           <li>All 5 sports included</li>
           <li>Free trial</li>
@@ -519,19 +613,17 @@
       <div class="pricing-card featured">
         <div class="pricing-badge">Most Popular</div>
         <div class="pricing-tier">Premium</div>
-        <div class="pricing-price">$16.99<span>/mo</span></div>
+        <div class="pricing-price">$19.99<span>/mo</span></div>
         <div class="pricing-desc">For serious athletes who want every edge</div>
         <ul class="pricing-features">
           <li>Everything in Basic</li>
-          <li>Advanced scenario coaching</li>
-          <li>Priority AI responses</li>
-          <li>Multi-sport training plans</li>
-          <li>7-day free trial</li>
+          <li>Twice the monthly amount of Claude AI usage</li>
+          <li>SportsIQ's <strong><a href="#tags">Tagging System</a></strong></li>
         </ul>
         <a href="#download" class="pricing-cta red">Start Free Trial</a>
       </div>
     </div>
-    <p class="trial-note">🔒 7-day free trial · Cancel anytime · Managed securely through Apple &amp; Google</p>
+    <p class="trial-note">🔒 Free trial · Cancel anytime · Managed securely through Apple &amp; Google</p>
   </div>
 </section>
 
@@ -547,7 +639,7 @@
           <div class="point-icon">💰</div>
           <div class="point-text">
             <h4>Fraction of Traditional Coaching Costs</h4>
-            <p>Private position coaching costs $50-150 per hour. SportsIQ provides expert coaching powered by Claude AI for less than $17 per month.</p>
+            <p>Private position coaching can cost $50-$150 per hour. SportsIQ provides expert coaching powered by Claude AI for less than $17 per month.</p>
           </div>
         </div>
         <div class="parent-point">
@@ -581,6 +673,120 @@
           <p style="margin-top: 8px;">SportsIQ Basic — AI coaching and position-specific workouts generated by Claude AI</p>
         </div>
         <p style="font-size: 13px; color: rgba(255,255,255,0.5);">That's less than the cost of one hour of private coaching. SportsIQ saves all of your chats and workouts so you can revisit them at any time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="tags" class="tags-section">
+  <div class="container">
+    <div class="section-label">Premium Feature</div>
+    <div class="tags-intro">
+      <h2 class="section-title">Turn Your Coaching History<br>Into an Organized Library</h2>
+      <p class="section-sub">The longer you use SportsIQ the more valuable your saved chats and workout plans become. Premium's Tagging System keeps everything organized and instantly retrievable — no more scrolling through weeks of history to find what you need.</p>
+    </div>
+    <div class="tags-layout">
+      <div class="tags-explainer">
+        <div class="tag-step">
+          <div class="tag-step-number">1</div>
+          <div class="tag-step-text">
+            <h4>Create Your Own Tags</h4>
+            <p>Create custom tags that match how you think about your training — by concept, body area, game situation, or anything else. Examples like "Defensive Zone Recognition", "Leg Day", "Pre-Season Conditioning", or "Red Zone Plays" are entirely up to you.</p>
+          </div>
+        </div>
+        <div class="tag-step">
+          <div class="tag-step-number">2</div>
+          <div class="tag-step-text">
+            <h4>Tag Any Chat or Workout</h4>
+            <p>After any AI coaching session or generated workout plan, apply one or more tags to it. A single chat can have multiple tags — for example a conversation about linebacker pass coverage could be tagged as both "Defensive IQ" and "Film Study".</p>
+          </div>
+        </div>
+        <div class="tag-step">
+          <div class="tag-step-number">3</div>
+          <div class="tag-step-text">
+            <h4>Retrieve Everything Instantly</h4>
+            <p>Tap any tag to instantly surface every chat and workout plan grouped under it. Everything you've ever saved on that topic appears in one place — no searching, no scrolling, no guessing.</p>
+          </div>
+        </div>
+        <div class="tag-step">
+          <div class="tag-step-number">4</div>
+          <div class="tag-step-text">
+            <h4>Your Knowledge Compounds Over Time</h4>
+            <p>As your library grows, your tags become a personalized coaching playbook built entirely around your position and your training. Every session adds to an organized foundation you can reference before games, practices, or workouts.</p>
+          </div>
+        </div>
+        <div style="margin-top: 8px;">
+          <span class="premium-badge-inline">⭐ Premium Exclusive Feature</span>
+        </div>
+      </div>
+      <div class="tag-mockup">
+        <div class="mockup-header">
+          <span>My Tagged Content</span>
+          <small>4 tags · 11 items</small>
+        </div>
+        <div class="tag-group">
+          <div class="tag-label blue">🏈 Defensive Zone Recognition <span class="tag-count">4</span></div>
+          <div class="tag-items">
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">💬</span>
+                <div><div class="tag-item-title">Cover 2 vs Cover 3 reads</div><div class="tag-item-date">Chat · Feb 28</div></div>
+              </div>
+            </div>
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">💬</span>
+                <div><div class="tag-item-title">Reading safety pre-snap</div><div class="tag-item-date">Chat · Feb 24</div></div>
+              </div>
+            </div>
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">💬</span>
+                <div><div class="tag-item-title">Zone blitz identification</div><div class="tag-item-date">Chat · Feb 19</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tag-group">
+          <div class="tag-label green">💪 Leg Day <span class="tag-count">3</span></div>
+          <div class="tag-items">
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">🏋️</span>
+                <div><div class="tag-item-title">Explosive lower body — no gym</div><div class="tag-item-date">Workout · Mar 1</div></div>
+              </div>
+            </div>
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">🏋️</span>
+                <div><div class="tag-item-title">QB lower body power program</div><div class="tag-item-date">Workout · Feb 22</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tag-group">
+          <div class="tag-label orange">🎯 Red Zone Plays <span class="tag-count">2</span></div>
+          <div class="tag-items">
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">💬</span>
+                <div><div class="tag-item-title">Fade route vs man coverage</div><div class="tag-item-date">Chat · Feb 26</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tag-group">
+          <div class="tag-label purple">🏃 Pre-Season Conditioning <span class="tag-count">2</span></div>
+          <div class="tag-items">
+            <div class="tag-item">
+              <div class="tag-item-left">
+                <span class="tag-item-icon">🏋️</span>
+                <div><div class="tag-item-title">8-week QB conditioning plan</div><div class="tag-item-date">Workout · Feb 15</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
